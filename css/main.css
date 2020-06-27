@@ -233,7 +233,7 @@ button {
   margin-bottom: -30px;
 }
 
-.section-features__item, .section-team__item {
+.section-features__item, .section-team__item, .team-cart {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 30px;
@@ -461,7 +461,7 @@ button {
   background-color: #f5f4fa;
 }
 
-.section-team__item {
+.team-cart {
   padding-bottom: 24px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -470,18 +470,18 @@ button {
   text-align: center;
 }
 
-.section-team__icon {
+.team-cart__icon {
   margin-bottom: 30px;
 }
 
-.section-team__title {
+.team-cart__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.section-team__role {
+.team-cart__role {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
