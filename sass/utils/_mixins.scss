@@ -1,0 +1,18 @@
+@mixin font($family: sans-serif, $size: 14px, $weight: 400, $spacing: 0.03em) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+@mixin transition(
+  $time: 1000ms,
+  $cube: cubic-bezier(0.4, 0, 0.2, 1),
+  $delay: 0ms,
+  $prop...
+) {
+  transition-property: $prop;
+  transition-duration: $time;
+  transition-timing-function: $cube;
+  transition-delay: $delay;
+}

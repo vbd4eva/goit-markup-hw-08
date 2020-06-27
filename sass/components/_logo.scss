@@ -1,0 +1,10 @@
+.logo {
+  display: inline-block;
+  @include font($family: $font-logo, $size: 24px, $weight: 700);
+  line-height: 1.17;
+  color: $color-text-title;
+
+  &__accent {
+    color: $color-accent;
+  }
+}

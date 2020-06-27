@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+
+  &__row {
+    min-height: 60px;
+
+    @extend %flex;
+    align-items: center;
+    //justify-content: space-between;
+  }
+}

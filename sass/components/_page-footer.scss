@@ -1,0 +1,33 @@
+.page-footer {
+  background-color: $color-footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--pale {
+    color: $color-pale;
+  }
+
+  &__row {
+    @extend %flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  &__subject {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__logo {
+    color: $color-pale;
+    margin-bottom: 20px;
+  }
+}

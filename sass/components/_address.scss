@@ -1,0 +1,13 @@
+.address {
+  color: $color-address;
+  line-height: 1.71;
+  font-style: normal;
+
+  &__item {
+    display: block;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}

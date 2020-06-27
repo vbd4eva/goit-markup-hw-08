@@ -1,0 +1,28 @@
+.form-subscribe {
+  // display: flex;
+  margin-left: -6px;
+  margin-right: -6px;
+
+  &__input-text {
+    @extend %input-text;
+    // flex-grow: 1;
+    display: block;
+    width: 100%;
+    // margin-left: 6px;
+    // margin-right: 6px;
+    margin-bottom: 20px;
+    padding: 15px 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &__submit {
+    @extend %accent-bg;
+    @extend %btn--accent;
+
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
