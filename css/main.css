@@ -226,14 +226,14 @@ button {
   letter-spacing: 0.06em;
 }
 
-.section-features {
+.section-features, .section-team__list {
   margin-left: -15px;
   margin-right: -15px;
   margin-top: -30px;
   margin-bottom: -30px;
 }
 
-.section-features__item {
+.section-features__item, .section-team__item {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 30px;
@@ -261,6 +261,13 @@ button {
 .page__section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.page__section-title {
+  padding-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .page-header {
@@ -420,10 +427,6 @@ button {
   color: #ffffff;
 }
 
-.section-features {
-  /* Особенности */
-}
-
 .section-features__icon-box {
   padding: 25px;
   margin-bottom: 30px;
@@ -448,5 +451,39 @@ button {
 
 .section-features__text {
   line-height: 1.71;
+}
+
+.section-activity {
+  display: none;
+}
+
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.section-team__item {
+  padding-bottom: 24px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.section-team__icon {
+  margin-bottom: 30px;
+}
+
+.section-team__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.section-team__role {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
 }
 /*# sourceMappingURL=main.css.map */
