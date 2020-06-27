@@ -9,13 +9,17 @@
 
 /* components */
 @import "./components/container";
-
+//
 @import "./components/page-header";
-@import "./components/logo";
 
+@import "./components/logo";
+//
 @import "./components/page-footer";
+
 @import "./components/address";
+
 @import "./components/social-list";
 
 @import "./components/forms";
-// @import "./components/buttons";
+//
+@import "./components/section-hero";

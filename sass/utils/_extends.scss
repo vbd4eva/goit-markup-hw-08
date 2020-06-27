@@ -1,5 +1,22 @@
+%container {
+  max-width: 1200px;
+  margin: 0 auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
+}
+
+// Positions
+%relative {
+  position: relative;
+}
 %flex {
   display: flex;
+}
+%in-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Акцент  текста */

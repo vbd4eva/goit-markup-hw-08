@@ -190,6 +190,11 @@ button {
   cursor: pointer;
 }
 
+.section-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .page-header__row, .page-footer__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +203,7 @@ button {
 
 /* Акцент  текста */
 /* Акцент  фона */
-.form-subscribe__submit,
+.form-subscribe__submit, .section-hero__btn,
 .social-list__link:hover,
 .social-list__link:focus {
   background-color: #2196f3;
@@ -220,7 +225,7 @@ button {
   letter-spacing: 0.03em;
 }
 
-.form-subscribe__submit {
+.form-subscribe__submit, .section-hero__btn {
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
@@ -379,5 +384,25 @@ button {
 .form-subscribe__submit {
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.section-hero {
+  padding: 118px 60px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/hero-image/hero-image.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-image/hero-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+}
+
+.section-hero__title {
+  margin: 0 auto 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
