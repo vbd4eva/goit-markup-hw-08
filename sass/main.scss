@@ -8,7 +8,8 @@
 @import "./utils/extends";
 
 /* components */
-@import "./components/container";
+@import "./components/page";
+
 //
 @import "./components/page-header";
 
@@ -23,3 +24,4 @@
 @import "./components/forms";
 //
 @import "./components/section-hero";
+@import "./components/section-features";

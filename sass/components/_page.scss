@@ -1,0 +1,21 @@
+.page {
+  margin: 0;
+  color: $color-text-primary;
+  background-color: $color-background-primary;
+
+  @include font($font-basic);
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__section {
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
