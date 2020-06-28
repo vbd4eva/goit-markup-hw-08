@@ -1,0 +1,10 @@
+.portfolio-list {
+  @extend %grid;
+  //   display: flex;
+  //   flex-wrap: wrap;
+
+  &__item {
+    @extend %grid__item;
+    // width: calc((100% - 30px * 2) / 3);
+  }
+}
