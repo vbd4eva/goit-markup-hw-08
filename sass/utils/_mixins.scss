@@ -6,10 +6,10 @@
 }
 
 @mixin transition(
-  $time: 1000ms,
-  $cube: cubic-bezier(0.4, 0, 0.2, 1),
+  $prop: all,
   $delay: 0ms,
-  $prop...
+  $time: 1000ms,
+  $cube: cubic-bezier(0.4, 0, 0.2, 1)
 ) {
   transition-property: $prop;
   transition-duration: $time;

@@ -186,7 +186,32 @@ button {
   display: flex;
 }
 
+.section-customers__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 /* Акцент  текста */
+
+.section-customers__link:hover,
+.section-customers__link:focus {
+  color: #2196f3;
+}
+
+.section-customers__link {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+}
+
 /* Акцент  фона */
 .form-subscribe__submit, .section-hero__btn,
 .social-list__link:hover,
@@ -196,6 +221,8 @@ button {
 }
 
 .social-list__link {
+  -webkit-transition-property: all;
+  transition-property: all;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -226,14 +253,14 @@ button {
   letter-spacing: 0.06em;
 }
 
-.section-features, .section-team__list {
+.section-features, .section-team__list, .section-customers__list {
   margin-left: -15px;
   margin-right: -15px;
   margin-top: -30px;
   margin-bottom: -30px;
 }
 
-.section-features__item, .section-team__item, .team-cart {
+.section-features__item, .section-team__item, .team-cart, .section-customers__item {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 30px;
@@ -485,5 +512,30 @@ button {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.section-customers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-customers__item {
+  min-width: calc(50% - 30px);
+}
+
+.section-customers__link {
+  position: relative;
+  display: block;
+  min-height: 90px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.section-customers__icon {
+  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

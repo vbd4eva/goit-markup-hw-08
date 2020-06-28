@@ -1,0 +1,40 @@
+.section-customers {
+  &__list {
+    @extend %grid;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    // width: calc((100% - (30px * 5)) / 6);
+    @extend %grid__item;
+    min-width: calc(50% - 30px);
+  }
+
+  &__link {
+    @extend %accent-hover;
+    position: relative;
+
+    display: block;
+
+    min-height: 90px;
+
+    border: 1px solid;
+    border-radius: 4px;
+
+    color: $color-light;
+
+    // transform: scale(1);
+    // transition: transform(75ms);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    // transform: scale(1.15);
+  }
+
+  &__icon {
+    @extend %in-center;
+    fill: currentColor;
+  }
+}
