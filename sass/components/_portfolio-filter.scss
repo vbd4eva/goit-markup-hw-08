@@ -1,0 +1,15 @@
+.portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  //   justify-content: center;
+
+  padding-bottom: 50px;
+
+  margin: -7.5px -4px;
+
+  &__button {
+    @extend %btn--simple;
+    @extend %accent-bg-hover;
+    margin: 7.5px 4px;
+  }
+}

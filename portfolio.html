@@ -4,101 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="page portfolio">
     <!-- Шапка сайта -->
-    <header class="page-h eader">
-      <div class="header-row container">
-        <nav class="navigation">
-          <a class="logo" href="./index.html"
-            ><span class="accent-text">Web</span> Studio</a
-          >
+    <header class="page-header">
+      <div class="page-header__row page__container">
+        <a class="logo" href="./index.html"
+          ><span class="logo__accent">Web</span> Studio</a
+        >
 
-          <ul class="site-nav">
-            <li class="site-nav__item relative">
-              <a class="site-nav__link accent-hover" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="site-nav__item relative">
-              <a
-                class="current site-nav__link accent-hover"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav__item relative">
-              <a class="site-nav__link accent-hover" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="contact-us grid-row">
-          <li class="grid-item">
-            <a
-              class="contact-us__link accent-hover"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="contact-us__icon">
-                <use href="./images/svg-images.svg#contacts-icon-mail"></use>
-              </svg>
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="contact-us__link accent-hover" href="tel:+380961111111">
-              <svg class="contact-us__icon">
-                <use href="./images/svg-images.svg#contacts-icon-tel"></use>
-              </svg>
-              <span>+38 096 111 11 11</span>
-            </a>
-          </li>
-        </ul>
+        <!-- <nav class="navigation">
+                  <ul class="site-nav">
+                    <li class="site-nav__item">
+                      <a
+                        class="current site-nav__link accent-hover"
+                        href="./index.html"
+                        >Студия</a
+                      >
+                    </li>
+                    <li class="site-nav__item">
+                      <a class="site-nav__link accent-hover" href="./portfolio.html"
+                        >Портфолио</a
+                      >
+                    </li>
+                    <li class="site-nav__item">
+                      <a class="site-nav__link accent-hover" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+      
+                <ul class="contact-us grid-row">
+                  <li class="grid-item">
+                    <a
+                      class="contact-us__link accent-hover"
+                      href="mailto:info@devstudio.com"
+                    >
+                      <svg class="contact-us__icon">
+                        <use href="./images/svg-images.svg#contacts-icon-mail"></use>
+                      </svg>
+                      <span>info@devstudio.com</span>
+                    </a>
+                  </li>
+                  <li class="grid-item">
+                    <a class="contact-us__link accent-hover" href="tel:+380961111111">
+                      <svg class="contact-us__icon">
+                        <use href="./images/svg-images.svg#contacts-icon-tel"></use>
+                      </svg>
+                      <span>+38 096 111 11 11</span>
+                    </a>
+                  </li>
+                </ul> -->
       </div>
     </header>
 
     <!-- Главное содержимое -->
     <main>
-      <section class="section container">
+      <section class="page__section page__container">
         <div class="portfolio-filter">
-          <button
-            class="btn-simple portfolio-filter__button accent-bg-hover"
-            type="button"
-          >
+          <button class="portfolio-filter__button" type="button">
             Все
           </button>
-          <button
-            class="btn-simple portfolio-filter__button accent-bg-hover"
-            type="button"
-          >
+          <button class="portfolio-filter__button" type="button">
             Веб-сайты
           </button>
-          <button
-            class="btn-simple portfolio-filter__button accent-bg-hover"
-            type="button"
-          >
+          <button class="portfolio-filter__button" type="button">
             Приложения
           </button>
-          <button
-            class="btn-simple portfolio-filter__button accent-bg-hover"
-            type="button"
-          >
+          <button class="portfolio-filter__button" type="button">
             Дизайн
           </button>
-          <button
-            class="btn-simple portfolio-filter__button accent-bg-hover"
-            type="button"
-          >
+          <button class="portfolio-filter__button" type="button">
             Маркетинг
           </button>
         </div>
@@ -315,21 +298,22 @@
 
     <!-- Подвал -->
     <footer class="page-footer">
-      <div class="container">
+      <div class="page__container">
         <div class="page-footer__row">
           <div class="page-footer__item">
-            <a class="logo" href="./index.html"
-              ><span class="accent-text">Web</span> Studio</a
+            <a class="logo page-footer__logo" href="./index.html"
+              ><span class="logo__accent">Web</span> Studio</a
             >
+
             <!-- Контактные данные -->
             <address class="address">
-              <span class="white-text address-item"
+              <span class="address__item page-footer--pale"
                 >г. Киев, пр-т Леси Украинки, 26</span
               >
-              <a class="address-item" href="mailto:info@devstudio.com"
+              <a class="address__item" href="mailto:info@devstudio.com"
                 >info@example.com</a
               >
-              <a class="address-item" href="tel:+380961111111"
+              <a class="address__item" href="tel:+380961111111"
                 >+38 099 111 11 11</a
               >
             </address>
@@ -337,12 +321,14 @@
 
           <!-- Соц. сети -->
           <div class="page-footer__item">
-            <b class="subject white-text">Присоединяйтесь</b>
+            <b class="page-footer__subject page-footer--pale"
+              >Присоединяйтесь</b
+            >
 
             <ul class="social-list">
               <li class="social-list__item">
                 <a
-                  class="page-footer__social social-list__link accent-bg-hover"
+                  class="social-list__link social-list__link--on-dark"
                   href="#"
                   aria-label="Инстаграм канал этого сайта"
                 >
@@ -355,7 +341,7 @@
               </li>
               <li class="social-list__item">
                 <a
-                  class="page-footer__social social-list__link accent-bg-hover"
+                  class="social-list__link social-list__link--on-dark"
                   href="#"
                   aria-label="Твитер лента этого сайта"
                   ><svg class="social-list__icon">
@@ -367,7 +353,7 @@
               </li>
               <li class="social-list__item">
                 <a
-                  class="page-footer__social social-list__link accent-bg-hover"
+                  class="social-list__link social-list__link--on-dark"
                   href="#"
                   aria-label="Фейсбук страничка этого сайта"
                 >
@@ -380,7 +366,7 @@
               </li>
               <li class="social-list__item">
                 <a
-                  class="page-footer__social social-list__link accent-bg-hover"
+                  class="social-list__link social-list__link--on-dark"
                   href="#"
                   aria-label="Линкед ин профиль этого сайта"
                 >
@@ -396,26 +382,23 @@
 
           <!-- Форма подписки  -->
           <div class="page-footer__item">
-            <b class="subject white-text">Подпишитесь на рассылку</b>
+            <b class="page-footer__subject page-footer--pale"
+              >Подпишитесь на рассылку</b
+            >
 
             <form class="form-subscribe">
               <input
-                class="form-subscribe__input-text input-text"
+                class="form-subscribe__input-text"
                 type="email"
                 name="user-email-subscribe"
                 placeholder="E-mail"
               />
-              <button
-                class="form-subscribe__submit btn-accent accent-bg"
-                type="submit"
-              >
+              <button class="form-subscribe__submit" type="submit">
                 Подписаться
               </button>
             </form>
           </div>
         </div>
-        <!-- Копирайт -->
-        <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
 

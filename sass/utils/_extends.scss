@@ -63,13 +63,14 @@
     text-align: center;
     letter-spacing: 0.06em;
   }
+
   &--simple {
     display: block;
     padding: 6px 22px;
     border-radius: 4px;
 
-    color: var(--color-text-title);
-    background-color: var(--color-background-secondary);
+    color: $color-text-title;
+    background-color: $color-background-secondary;
 
     font-family: Roboto;
     font-style: normal;
