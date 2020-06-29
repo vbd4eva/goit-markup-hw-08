@@ -90,14 +90,12 @@
   margin-left: -$grid-margin/2;
   margin-right: -$grid-margin/2;
 
-  margin-top: -$grid-margin;
   margin-bottom: -$grid-margin;
 
   &__item {
     margin-left: $grid-margin/2;
     margin-right: $grid-margin/2;
 
-    margin-top: $grid-margin;
     margin-bottom: $grid-margin;
   }
 }

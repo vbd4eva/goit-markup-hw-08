@@ -277,14 +277,12 @@ button {
 .section-features, .section-team__list, .section-customers__list, .portfolio-list {
   margin-left: -15px;
   margin-right: -15px;
-  margin-top: -30px;
   margin-bottom: -30px;
 }
 
 .section-features__item, .section-team__item, .team-cart, .section-customers__item, .portfolio-list__item {
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -366,8 +364,6 @@ button {
 
 .page-footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .page-footer--pale {
@@ -629,10 +625,19 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-customers__item {
-  min-width: calc(50% - 30px);
+  min-width: calc((100% - 2 * 30px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .section-customers__item {
+    min-width: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .section-customers__link {
