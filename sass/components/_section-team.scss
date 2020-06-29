@@ -2,18 +2,26 @@
   background-color: $color-background-secondary;
 
   &__list {
-    // display: flex;
     @extend %grid;
-    @media screen and (min-width: $breakpoint-2) {
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
 
   &__item {
     @extend %grid__item;
-    @media screen and (min-width: $breakpoint-2) {
+  }
+
+  @media screen and (min-width: $breakpoint-2) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
       width: calc((100% - 2 * 30px) / 2);
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-3) {
+    &__item {
+      width: calc((100% - 4 * 30px) / 4);
     }
   }
 }

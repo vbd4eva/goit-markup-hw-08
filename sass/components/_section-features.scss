@@ -2,17 +2,9 @@
   // Особенности
 
   @extend %grid;
-  @media screen and (min-width: $breakpoint-2) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   &__item {
-    // width: calc((100% - 90px) / 4);
     @extend %grid__item;
-    @media screen and (min-width: $breakpoint-2) {
-      width: calc((100% - 2 * 30px) / 2);
-    }
   }
   &__icon-box {
     padding: 25px;
@@ -32,12 +24,26 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: center;
-
-    @media screen and (min-width: $breakpoint-2) {
-      text-align: left;
-    }
   }
   &__text {
     line-height: 1.71;
+  }
+
+  @media screen and (min-width: $breakpoint-2) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: calc((100% - 2 * 30px) / 2);
+    }
+
+    &__subject {
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: $breakpoint-3) {
+    &__item {
+      width: calc((100% - 4 * 30px) / 4);
+    }
   }
 }

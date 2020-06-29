@@ -13,4 +13,9 @@
       width: calc((100% - 30px * 2) / 2);
     }
   }
+  @media screen and (min-width: $breakpoint-3) {
+    &__item {
+      width: calc((100% - 30px * 3) / 3);
+    }
+  }
 }

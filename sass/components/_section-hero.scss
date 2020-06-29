@@ -1,7 +1,4 @@
 .section-hero {
-  //   @extend %relative;
-  //   height: calc(100vh - 81px);
-  //min-height: 313px;
   padding: 118px 60px;
 
   background-image: linear-gradient(
@@ -15,17 +12,7 @@
 
   text-align: center;
 
-  &__container {
-    // @extend %container;
-    // @extend %in-center;
-  }
-
   &__title {
-    // max-width: 646px;
-    // font-size: 44px;
-    // line-height: 1.36;
-    // margin: 0 auto 46px;
-
     margin: 0 auto 30px;
 
     font-weight: 900;
@@ -40,5 +27,28 @@
   &__btn {
     @extend %btn--accent;
     @extend %accent-bg;
+  }
+
+  @media screen and (min-width: $breakpoint-3) {
+    position: relative;
+    height: calc(100vh - 81px);
+    min-height: 313px;
+    padding: 0;
+
+    &__container {
+      // @extend %container;
+      // @extend %in-center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__title {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+      margin: 0 auto 46px;
+    }
   }
 }

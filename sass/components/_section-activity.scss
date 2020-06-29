@@ -1,3 +1,42 @@
 .section-activity {
   display: none;
+  &__list {
+    @extend %grid;
+  }
+  &__item {
+    @extend %grid__item;
+  }
+
+  @media screen and (min-width: $breakpoint-3) {
+    display: block;
+
+    &__list {
+      display: flex;
+    }
+    &__item {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    &__icon {
+      display: block;
+    }
+    &__subject {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      display: block;
+      padding-top: 27px;
+      padding-bottom: 27px;
+
+      background-color: $color-background-transparent;
+      color: $color-pale;
+
+      font-weight: 700;
+      line-height: 1.14;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 }

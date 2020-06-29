@@ -6,13 +6,17 @@
 
   margin: 0 -4px -7.5px;
 
-  @media screen and (min-width: $breakpoint-2) {
-    justify-content: center;
-  }
-
   &__button {
     @extend %btn--simple;
     @extend %accent-bg-hover;
     margin: 0 4px 7.5px;
+  }
+
+  @media screen and (min-width: $breakpoint-2) {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $breakpoint-3) {
+    padding-bottom: 50px;
   }
 }
