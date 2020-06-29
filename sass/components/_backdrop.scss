@@ -1,0 +1,31 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  padding: 93px 15px;
+
+  background-color: $backdrop-bg;
+
+  opacity: 1;
+
+  @include transition($prop: opacity);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.is-hidden .modal {
+    // transform: translate(-50%, -30%);
+  }
+}
+.blur {
+  filter: blur(3px);
+  @include transition(filter, 2000ms, linear);
+}
+.modal-open {
+  overflow: hidden;
+}

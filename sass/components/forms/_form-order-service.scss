@@ -1,0 +1,92 @@
+.form-order-service {
+  // min-width: 450px;
+  text-align: center;
+
+  &__subject {
+    font-size: 20px;
+    line-height: 1.5;
+    color: $color-text-title;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    padding-top: 28px;
+  }
+  &__submit {
+    @extend %btn--accent;
+    @extend %accent-bg;
+  }
+  &__icon {
+    position: absolute;
+    top: 40px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    color: $color-text-title;
+
+    @include transition(color);
+  }
+
+  &__input-text {
+    @extend %input-text;
+
+    width: 100%;
+    padding: 12px 18px 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__input-text:focus:invalid {
+    outline-color: orange;
+  }
+
+  &__input-text:focus:invalid ~ &__icon,
+  &__input-text:not(:placeholder-shown):invalid ~ &__icon {
+    color: orange;
+  }
+
+  &__input-text:focus ~ &__label-text,
+  &__input-text:not(:placeholder-shown) ~ &__label-text {
+    transform: translate(-26px, calc(-17px - 100%));
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $color-accent;
+    animation-name: move-label;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input-text:focus ~ &__label-text.textarea,
+  &__input-text:not(:placeholder-shown) ~ &__label-text.textarea {
+    transform: translate(0, calc(-17px - 100%));
+  }
+  &__input-text:focus ~ &__icon,
+  &__input-text:not(:placeholder-shown) ~ &__icon {
+    color: $color-accent;
+  }
+  &__input-text.textarea {
+    padding: 12px 16px;
+    resize: none;
+  }
+  &__label-text {
+    position: absolute;
+    top: 42px;
+    left: 42px;
+  }
+  &__label-text.textarea {
+    left: 16px;
+  }
+}
+
+@keyframes move-label {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: $color-accent;
+  }
+}

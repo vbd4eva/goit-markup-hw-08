@@ -1,0 +1,54 @@
+.modal {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  position: relative;
+  padding: 40px;
+
+  border-radius: 4px;
+  background-color: $color-pale;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  //   @include transition($prop: transform);
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  //   transform: translate(33%, -33%);
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  background-color: $color-pale;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: $color-text-title;
+  @include transition(transform);
+}
+.modal__close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal__close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.modal__close:hover::before,
+.modal__close:hover::after {
+  transform: translate(-50%, -50%) rotate(0);
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -256,7 +256,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="team-cart lang="">
+              <li class="team-cart">
                 <img
                   class="team-cart__icon"
                   src="./images/team-avatars/avatar-marta-stewart.jpg"
@@ -265,7 +265,9 @@
                   height="260"
                 />
                 <h3 class="team-cart__title">Ольга Иванова</h3>
-                <p class="team-cart__role" lang='en'>Frontend Developer</p>
+
+                <p class="team-cart__role" lang="en">Frontend Developer</p>
+
                 <ul class="social-list team-cart__social-list">
                   <li class="social-list__item">
                     <a
@@ -321,7 +323,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="team-cart section-team__item" lang="en">
+
+              <li class="team-cart section-team__item">
                 <img
                   class="team-cart__icon"
                   src="./images/team-avatars/avatar-robert-jakis.jpg"
@@ -329,8 +332,11 @@
                   width="278"
                   height="260"
                 />
+
                 <h3 class="team-cart__title">Андрей Шевченко</h3>
+
                 <p class="team-cart__role" lang="en">Marketing</p>
+
                 <ul class="social-list team-cart__social-list">
                   <li class="social-list__item">
                     <a
@@ -386,7 +392,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="team-cart lang="">
+
+              <li class="team-cart">
                 <img
                   class="team-cart__icon"
                   src="./images/team-avatars/avatar-martin-doe.jpg"
@@ -519,7 +526,7 @@
                 </svg>
               </a>
             </li>
-            <li class="section-customers__item"">
+            <li class="section-customers__item">
               <a
                 class="section-customers__link"
                 href="#"
@@ -534,7 +541,8 @@
                 </svg>
               </a>
             </li>
-            <li class="section-customers__item"">
+
+            <li class="section-customers__item">
               <a
                 class="section-customers__link"
                 href="#"
@@ -678,17 +686,17 @@
     </script>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal relative">
+      <div class="modal">
         <form class="form-order-service">
           <b class="form-order-service__subject"
             >Оставьте свои данные, мы вам перезвоним</b
           >
-          <label class="form-order-service__label relative">
+          <label class="form-order-service__label">
             <input
-              class="form-order-service__input-text input-text"
+              class="form-order-service__input-text"
               type="text"
               name="customer-name"
-              required
+              required=""
               pattern="^[A-Za-zА-Яа-яЁёЇїІі\s]+$"
               placeholder=" "
             />
@@ -698,12 +706,12 @@
             <span class="form-order-service__label-text">Имя</span>
           </label>
 
-          <label class="form-order-service__label relative">
+          <label class="form-order-service__label">
             <input
-              class="form-order-service__input-text input-text"
+              class="form-order-service__input-text"
               type="text"
               name="customer-tel"
-              required
+              required=""
               pattern="^[0-9(_)\s\+\-]+$"
               placeholder=" "
             />
@@ -713,9 +721,9 @@
             <span class="form-order-service__label-text">Телефон</span>
           </label>
 
-          <label class="form-order-service__label relative">
+          <label class="form-order-service__label">
             <input
-              class="form-order-service__input-text input-text"
+              class="form-order-service__input-text"
               type="email"
               name="customer-email"
               placeholder=" "
@@ -725,9 +733,9 @@
             </svg>
             <span class="form-order-service__label-text">Почта</span>
           </label>
-          <label class="form-order-service__label relative">
+          <label class="form-order-service__label">
             <textarea
-              class="form-order-service__input-text input-text textarea"
+              class="form-order-service__input-text textarea"
               rows="5"
               name="customer-comments"
               placeholder=" "
@@ -744,10 +752,10 @@
                 type="checkbox"
                 name="topic"
                 value="html"
-                required
+                required=""
               />
 
-              <svg class="checkbox_icon accent-text">
+              <svg class="checkbox__icon">
                 <use href="./images/svg-images.svg#form-checkbox-icon"></use>
               </svg>
             </label>
@@ -759,12 +767,12 @@
             </p>
           </div>
 
-          <button class="btn-accent accent-bg" type="submit">
+          <button class="form-order-service__submit" type="submit">
             Подписаться
           </button>
         </form>
 
-        <button class="modal__close" data-modal-close>
+        <button class="modal__close" data-modal-close="">
           закрыть модальное окно
         </button>
       </div>

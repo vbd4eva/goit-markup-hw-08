@@ -1,22 +1,23 @@
-// %container {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   // padding-left: 15px;
-//   // padding-right: 15px;
-// }
-
-// Positions
-// %relative {
-//   position: relative;
-// }
 %flex {
   display: flex;
 }
+
 %in-center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+%visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Акцент  текста */
@@ -38,12 +39,6 @@
 }
 %accent-bg-hover {
   @include transition();
-}
-
-%input-text {
-  border-radius: 4px;
-  background-color: transparent;
-  letter-spacing: 0.03em;
 }
 
 //buttons

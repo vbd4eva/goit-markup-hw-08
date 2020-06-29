@@ -21,7 +21,8 @@
 
 @import "./components/social-list";
 
-@import "./components/forms";
+@import "./components/forms/form-blocks";
+@import "./components/forms/form-subscribe";
 
 //page studio
 @import "./components/section-hero";
@@ -35,3 +36,8 @@
 @import "./components/portfolio-filter";
 @import "./components/portfolio-list";
 @import "./components/portfolio-cart";
+
+//backdrop
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/forms/form-order-service";
