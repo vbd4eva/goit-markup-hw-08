@@ -1,15 +1,18 @@
 .portfolio-filter {
   display: flex;
   flex-wrap: wrap;
-  //   justify-content: center;
 
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 
-  margin: -7.5px -4px;
+  margin: 0 -4px -7.5px;
+
+  @media screen and (min-width: $breakpoint-2) {
+    justify-content: center;
+  }
 
   &__button {
     @extend %btn--simple;
     @extend %accent-bg-hover;
-    margin: 7.5px 4px;
+    margin: 0 4px 7.5px;
   }
 }

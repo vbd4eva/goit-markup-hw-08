@@ -1,10 +1,16 @@
 .portfolio-list {
   @extend %grid;
-  //   display: flex;
-  //   flex-wrap: wrap;
 
   &__item {
     @extend %grid__item;
-    // width: calc((100% - 30px * 2) / 3);
+  }
+
+  @media screen and (min-width: $breakpoint-2) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: calc((100% - 30px * 2) / 2);
+    }
   }
 }
