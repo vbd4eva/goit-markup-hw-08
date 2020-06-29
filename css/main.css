@@ -234,8 +234,8 @@ button {
 }
 
 .social-list__link, .portfolio-filter__button {
-  -webkit-transition-property: all;
-  transition-property: all;
+  -webkit-transition-property: color, background;
+  transition-property: color, background;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

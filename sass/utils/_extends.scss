@@ -38,7 +38,10 @@
   color: $color-pale;
 }
 %accent-bg-hover {
-  @include transition();
+  // $prop: "color", "background";
+  // @include transition($prop);
+
+  @include transition("color, background");
 }
 
 //buttons
