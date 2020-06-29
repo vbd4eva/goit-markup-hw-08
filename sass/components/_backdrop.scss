@@ -12,14 +12,16 @@
 
   opacity: 1;
 
-  @include transition($prop: opacity);
+  @include transition(opacity);
 
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
   &.is-hidden .modal {
-    // transform: translate(-50%, -30%);
+    @media screen and (min-width: $breakpoint-1 + 1px) and (min-height: $breakpoint-2) {
+      transform: translate(-50%, -30%);
+    }
   }
 }
 .blur {
