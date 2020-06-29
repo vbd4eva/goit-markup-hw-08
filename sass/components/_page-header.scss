@@ -4,8 +4,12 @@
   &__row {
     min-height: 60px;
 
-    @extend %flex;
+    display: flex;
     align-items: center;
     //justify-content: space-between;
+
+    @media screen and (min-width: $breakpoint-2) {
+      min-height: 80px;
+    }
   }
 }

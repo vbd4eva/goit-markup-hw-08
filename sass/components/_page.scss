@@ -10,6 +10,13 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width: $breakpoint-1) {
+      max-width: $breakpoint-1;
+    }
+    @media screen and (min-width: $breakpoint-2) {
+      max-width: $breakpoint-2;
+    }
   }
 
   &__section {

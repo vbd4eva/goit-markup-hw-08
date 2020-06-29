@@ -8,8 +8,11 @@
   }
 
   &__row {
-    @extend %flex;
-    flex-direction: column;
+    @media screen and (min-width: $breakpoint-2) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -17,6 +20,14 @@
 
     &:not(:last-child) {
       margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $breakpoint-2) {
+      flex-basis: 50%;
+
+      &:last-child {
+        flex-grow: 1;
+      }
     }
   }
   &__subject {
