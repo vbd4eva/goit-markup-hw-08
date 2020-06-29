@@ -6,26 +6,37 @@
   }
 
   &__row {
+    @extend %grid;
+    margin-bottom: -60px;
     @media screen and (min-width: $breakpoint-2) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+    @media screen and (min-width: $breakpoint-3) {
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 
   &__item {
+    @extend %grid__item;
+    margin-bottom: 60px;
     text-align: center;
-
-    &:not(:last-child) {
-      margin-bottom: 60px;
-    }
+    // &:not(:last-child) {
+    //   margin-bottom: 60px;
+    // }
 
     @media screen and (min-width: $breakpoint-2) {
-      flex-basis: 50%;
+      width: calc((100% - 2 * 30px) / 2);
 
       &:last-child {
         flex-grow: 1;
       }
+    }
+    @media screen and (min-width: $breakpoint-3) {
+      width: calc((100% - 4 * 30px) / 4);
+      text-align: left;
     }
   }
   &__subject {

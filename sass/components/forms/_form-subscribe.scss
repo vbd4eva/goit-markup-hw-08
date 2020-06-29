@@ -1,15 +1,15 @@
 .form-subscribe {
-  // display: flex;
-  // margin-left: -6px;
-  // margin-right: -6px;
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: -20px;
 
   &__input-text {
     @extend %input-text;
     // flex-grow: 1;
     display: block;
     width: 100%;
-    // margin-left: 6px;
-    // margin-right: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
     margin-bottom: 20px;
     padding: 15px 16px;
     font-size: 16px;
@@ -24,5 +24,10 @@
 
     margin-left: 6px;
     margin-right: 6px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-3) {
+    display: flex;
   }
 }
