@@ -1,15 +1,22 @@
 .page-header {
+  position: relative;
+
   border-bottom: 1px solid #ececec;
 
   &__row {
     min-height: 60px;
-
     display: flex;
     align-items: center;
-    //justify-content: space-between;
 
-    @media screen and (min-width: $breakpoint-2) {
+    //justify-content: space-between;
+  }
+  @media screen and (min-width: $breakpoint-2) {
+    &__row {
       min-height: 80px;
+    }
+
+    &__navigation {
+      margin-right: auto;
     }
   }
 }

@@ -1,19 +1,39 @@
 .site-nav {
-  @extend %flex;
-  margin: 0 -25px;
+  // margin: 0 -25px -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: $breakpoint-2) {
+    margin: 0 -25px;
+  }
 
   &__item {
     position: relative;
-    margin: 0 25px;
+
+    @media screen and (max-width: $breakpoint-2 - 1) {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-2) {
+      margin: 0 25px;
+    }
+  }
+  @media screen and (min-width: $breakpoint-2) {
+    flex-direction: row;
+    margin-bottom: 0;
   }
 }
-
 .site-nav__link {
+  // padding: 32px 0;
+
   display: block;
-  padding: 32px 0;
   color: $color-text-title;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   @extend %accent-hover;
@@ -35,14 +55,24 @@
     @include transition(transform);
   }
 
-  &:hover::after,
-  &:focus::after {
-    transform: scaleX(1);
+  @media screen and (min-width: $breakpoint-2) {
+    padding: 32px 0;
+
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:hover::after,
+    &:focus::after {
+      transform: scaleX(1);
+    }
   }
 }
 
 .site-nav__link.current {
   color: $color-accent;
+  @media screen and (max-width: $breakpoint-2 - 1) {
+    padding-bottom: 12px;
+  }
 
   &::after {
     transform: scaleX(1);

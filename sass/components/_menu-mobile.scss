@@ -1,0 +1,59 @@
+.menu-mobile-toggle {
+  display: none;
+  @extend %accent-hover;
+  @media screen and (max-width: $breakpoint-2 - 1) {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: #ffffff;
+
+    & .icon-menu-close {
+      display: none;
+    }
+
+    &.is-open .icon-menu-close {
+      display: block;
+    }
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
+}
+
+.menu-mobile-container {
+  @media screen and (max-width: $breakpoint-2 - 1) {
+    display: none;
+    padding: 60px 15px;
+
+    position: absolute;
+    left: 0px;
+    top: 100%;
+
+    width: 100%;
+
+    text-align: center;
+
+    background-color: $color-pale;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-2) {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 81px;
+  }
+
+  @media screen and (min-width: $breakpoint-3) {
+    padding-left: 85px;
+  }
+}

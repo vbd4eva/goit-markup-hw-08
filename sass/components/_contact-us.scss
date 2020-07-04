@@ -1,0 +1,46 @@
+.contact-us {
+  @extend %grid;
+
+  &__item {
+    @extend %grid__item;
+  }
+
+  &__link {
+    @extend %accent-hover;
+    display: flex;
+    justify-content: center;
+    color: $color-text-primary;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: $breakpoint-3 - 1) {
+    margin: 0;
+    &__item {
+      margin: 0;
+      margin-top: 16px;
+    }
+  }
+  @media screen and (min-width: $breakpoint-2) {
+    &__link {
+      font-size: 14px;
+      line-height: 1.14;
+      justify-content: left;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-3) {
+    display: flex;
+
+    &__link {
+      padding: 28px 0;
+    }
+  }
+}
