@@ -1004,7 +1004,13 @@ svg {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .team-cart__thumb {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .team-cart__icon {
     width: 100%;
   }

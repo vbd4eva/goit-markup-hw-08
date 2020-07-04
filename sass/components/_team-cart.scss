@@ -13,10 +13,14 @@
     height: 320px;
     overflow: hidden;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-2) {
+      height: 260px;
+    }
   }
 
   &__icon {
-    @media screen and (max-width: $breakpoint-2 - 1) {
+    @media screen and (max-width: $breakpoint-3 - 1) {
       width: 100%;
       // position: absolute;
       // left: 50%;
