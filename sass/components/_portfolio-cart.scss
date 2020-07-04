@@ -4,6 +4,7 @@
   &__thumb {
     position: relative;
     overflow: hidden;
+    height: 294px;
   }
   &__link {
     display: block;
@@ -17,8 +18,15 @@
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
   &__icon {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    @media screen and (max-width: $breakpoint-2 - 1) {
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    // border-top-right-radius: 5px;
+    // border-top-left-radius: 5px;
   }
   &__cell {
     padding: 20px 24px;

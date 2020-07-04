@@ -183,32 +183,39 @@
             <li class="section-activity__item">
               <img
                 class="section-activity__icon"
-                src="./images/desktop-apps.jpg"
                 alt="Ноутбук"
-                width="380"
-                height="294"
-              /><span class="section-activity__subject"
+                src="./images/desktop-apps.jpg"
+                srcset="
+                  ./images/desktop-apps@2x.jpg 2x,
+                  ./images/desktop-apps@3x.jpg 3x
+                "
+              />
+              <span class="section-activity__subject"
                 >Десктопные приложения</span
               >
             </li>
             <li class="section-activity__item">
               <img
+                alt="Смартфон"
                 class="section-activity__icon"
                 src="./images/mobile-apps.jpg"
-                alt="Смартфон"
-                width="380"
-                height="294"
+                srcset="
+                  ./images/mobile-apps@2x.jpg 2x,
+                  ./images/mobile-apps@3x.jpg 3x
+                "
               /><span class="section-activity__subject"
                 >Мобильные приложения</span
               >
             </li>
             <li class="section-activity__item">
               <img
+                alt="Проэкт на большом экране"
                 class="section-activity__icon"
                 src="./images/design-solutions.jpg"
-                alt="Проэкт на большом экране"
-                width="380"
-                height="294"
+                srcset="
+                  ./images/design-solutions@2x.jpg 2x,
+                  ./images/design-solutions@3x.jpg 3x
+                "
               /><span class="section-activity__subject"
                 >Дизайнерские решения</span
               >
@@ -222,13 +229,18 @@
             <h2 class="page__section-title">Наша команда</h2>
             <ul class="section-team__list">
               <li class="team-cart section-team__item">
-                <img
-                  class="team-cart__icon"
-                  src="./images/team-avatars/avatar-john-smith.jpg"
-                  alt="Николай Кучеренко портрет"
-                  width="278"
-                  height="260"
-                />
+                <div class="team-cart__thumb">
+                  <img
+                    class="team-cart__icon"
+                    alt="Николай Кучеренко портрет"
+                    src="./images/team-avatars/avatar-john-smith.jpg"
+                    srcset="
+                      ./images/team-avatars/avatar-john-smith@2x.jpg 2x,
+                      ./images/team-avatars/avatar-john-smith@3x.jpg 3x
+                    "
+                  />
+                </div>
+
                 <h3 class="team-cart__title">Николай Кучеренко</h3>
                 <p class="team-cart__role" lang="en">Product Designer</p>
                 <ul class="social-list team-cart__social-list">
@@ -284,13 +296,18 @@
               </li>
 
               <li class="team-cart section-team__item">
-                <img
-                  class="team-cart__icon"
-                  src="./images/team-avatars/avatar-marta-stewart.jpg"
-                  alt="Ольга Иванова портрет"
-                  width="278"
-                  height="260"
-                />
+                <div class="team-cart__thumb">
+                  <img
+                    class="team-cart__icon"
+                    alt="Ольга Иванова портрет"
+                    src="./images/team-avatars/avatar-marta-stewart.jpg"
+                    srcset="
+                      ./images/team-avatars/avatar-marta-stewart@2x.jpg 2x,
+                      ./images/team-avatars/avatar-marta-stewart@3x.jpg 3x
+                    "
+                  />
+                </div>
+
                 <h3 class="team-cart__title">Ольга Иванова</h3>
 
                 <p class="team-cart__role" lang="en">Frontend Developer</p>
@@ -352,13 +369,17 @@
               </li>
 
               <li class="team-cart section-team__item">
-                <img
-                  class="team-cart__icon"
-                  src="./images/team-avatars/avatar-robert-jakis.jpg"
-                  alt="Андрей Шевченко портрет"
-                  width="278"
-                  height="260"
-                />
+                <div class="team-cart__thumb">
+                  <img
+                    class="team-cart__icon"
+                    alt="Андрей Шевченко портрет"
+                    src="./images/team-avatars/avatar-robert-jakis.jpg"
+                    srcset="
+                      ./images/team-avatars/avatar-robert-jakis@2x.jpg 2x,
+                      ./images/team-avatars/avatar-robert-jakis@3x.jpg 3x
+                    "
+                  />
+                </div>
 
                 <h3 class="team-cart__title">Андрей Шевченко</h3>
 
@@ -421,13 +442,18 @@
               </li>
 
               <li class="team-cart section-team__item">
-                <img
-                  class="team-cart__icon"
-                  src="./images/team-avatars/avatar-martin-doe.jpg"
-                  alt="Иван Николаев портрет"
-                  width="278"
-                  height="260"
-                />
+                <div class="team-cart__thumb">
+                  <img
+                    class="team-cart__icon"
+                    alt="Иван Николаев портрет"
+                    src="./images/team-avatars/avatar-martin-doe.jpg"
+                    srcset="
+                      ./images/team-avatars/avatar-martin-doe@2x.jpg 2x,
+                      ./images/team-avatars/avatar-martin-doe@3x.jpg 3x
+                    "
+                  />
+                </div>
+
                 <h3 class="team-cart__title">Иван Николаев</h3>
                 <p class="team-cart__role" lang="en">UI Designer</p>
                 <ul class="social-list team-cart__social-list">

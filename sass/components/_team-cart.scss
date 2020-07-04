@@ -1,14 +1,28 @@
 .team-cart {
   @extend %grid__item;
   padding-bottom: 24px;
+  overflow: hidden;
   background-color: $color-pale;
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   text-align: center;
 
-  &__icon {
+  &__thumb {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
     margin-bottom: 30px;
+  }
+
+  &__icon {
+    @media screen and (max-width: $breakpoint-2 - 1) {
+      width: 100%;
+      // position: absolute;
+      // left: 50%;
+      // top: 50%;
+      // transform: translate(-50%, -50%);
+    }
   }
   &__title {
     margin-bottom: 10px;
